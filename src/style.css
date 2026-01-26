@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 224, 226);
+}
+
+.navbar {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(199, 209, 219);
+}
+
+.logo {
+    list-style-type: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(151, 183, 202);
+}
+
+.logo img {
+    height: 48px;
+    padding-top: 4px;
+}
+
+.navbarlinks {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+    justify-self: right;
+    padding-right: 12px;
+}
+
+.navbarlinks a {
+    text-decoration: none;
+    color: rgb(151, 183, 202);
+    padding: 8px;
+    background-color: rgb(233, 239, 240);
+}
+
+.navbarlinks a:hover {
+    background-color: rgb(151, 183, 202);
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.welcomediv h1 {
+    color: rgb(99, 161, 158);
+    text-align: center;
+}
+
+.welcomediv p {
+    color: rgb(99, 161, 158);
+    text-align: center;
+    font-size: 18px;
+}
+
+.welcomediv {
+    margin-bottom: 64px;
+}
+
+.employmentdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    justify-self: center;
+    margin-top: 48px;
+    padding: 8px;
+    background-color: rgb(204, 217, 219);
+}
+
+.employmentdiv h2 {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.employmentdiv p {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.employmentdiv button {
+    color: rgb(73, 117, 115);
+    font-size: 20px;
+    padding: 8px;
+    background-color: rgb(190, 203, 206);
+    margin: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.employmentdiv button:hover {
+    background-color: rgb(151, 183, 202);
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.aboutdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    justify-self: center;
+    margin-top: 48px;
+    padding: 8px;
+    background-color: rgb(204, 217, 219);
+}
+
+.aboutdiv h1 {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.aboutdiv h2 {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.aboutdiv p {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.aboutdiv a {
+    color: rgb(73, 117, 115);
+    margin-top: 32px;
+}
+
+.jobpostingform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    justify-self: center;
+    margin-top: 48px;
+    padding: 8px;
+    background-color: rgb(204, 217, 219);
+}
+
+
+
+.jobpostingform h1 {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.jobpostingform h2 {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.jobpostingform p {
+    color: rgb(99, 161, 158);
+    margin: 8px;
+}
+
+.jobpostingform a {
+    color: rgb(73, 117, 115);
+    margin-top: 32px;
+}
+
+.horizontaldiv {
+    display: flex;
+    gap: 16px;
+}
+
+.jobpostingform input {
+    margin: 8px;
+    padding: 8px;
+    border: 1px solid rgb(151, 183, 202);
+    border-radius: 4px;
+}
+
+.jobpostingform select {
+    margin: 8px;
+    padding: 8px;
+    width: 187px;
+    border: 1px solid rgb(151, 183, 202);
+    border-radius: 4px;
+}
+
+.jobdescriptiontextarea {
+    width: 400px;
+    height: 200px;
+    resize: none;
+    border: 1px solid rgb(151, 183, 202);
+    border-radius: 4px;
+}
+
+.jobpostingform button {
+    color: rgb(73, 117, 115);
+    font-size: 20px;
+    padding: 8px;
+    background-color: rgb(190, 203, 206);
+    margin: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.job {
+    display: inline-block;
+    background-color: rgb(204, 217, 219);
+    padding: 8px;
+    margin: 8px;
+    max-width: 300px;
+    min-width: fit-content;
+    width: 100%;
+    height: fit-content;
+    border: 0px;
+    cursor: pointer;
+}
+
+.jobname {
+    color: rgb(99, 161, 158);
+    font-size: 20px;
+    margin: 4px;
+}
+
+.companyname {
+    color: rgb(99, 161, 158);
+    font-size: 14px;
+    margin: 4px;
+}
+
+.location {
+    color: rgb(99, 161, 158);
+    font-size: 14px;
+    margin: 4px;
+}
+
+.pay {
+    color: rgb(99, 161, 158);
+    font-size: 14px;
+    margin: 4px;
+}
+
+.jobtype {
+    color: rgb(99, 161, 158);
+    font-size: 14px;
+    margin: 4px;
+}
+
+.jobdescription {
+    color: rgb(99, 161, 158);
+    font-size: 14px;
+    margin: 4px;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.jobdetails {
+    display: inline-block;
+    background-color: rgb(204, 217, 219);
+    padding: 8px;
+    margin: 8px;
+    max-width: 500px;
+    min-width: 200px;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.jobpanelsdiv {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+
+.jobsdiv {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px;
+    min-width: fit-content;
+    width: 100%;
+    padding: 8px;
+    margin: 8px;
+}
+
+.jobsearchdiv {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    width: 100%;
+    justify-self: center;
+    margin-top: 48px;
+}
+
+.jobinput {
+    color: rgb(73, 117, 115);
+    background-color: rgba(169, 223, 218, 0.603);
+    border-color: rgb(127, 167, 167);
+    max-width: 250px;
+    width: 100%;
+    height: 20px;
+}
+
+.locationinput {
+    color: rgb(73, 117, 115);
+    background-color: rgba(169, 223, 218, 0.603);
+    border-color: rgb(127, 167, 167);
+    max-width: 250px;
+    width: 100%;
+    height: 20px;
+}
+
+.jobsearchbutton {
+    color: rgb(73, 117, 115);
+    font-size: 16px;
+    background-color: rgb(190, 203, 206);
+    cursor: pointer;
+    border-color: rgb(127, 167, 167);
+}
+
+.hidden {
+    display: none;
+}
