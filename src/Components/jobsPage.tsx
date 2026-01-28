@@ -15,7 +15,7 @@ export default function JobsPage() {
   return (
     <>
       <div className="jobsearchdiv">
-        <input type="text" placeholder="Job Name" className="jobinput" />
+        <input type="text" placeholder="Job Title" className="jobinput" />
         <input type="text" placeholder="Location" className="locationinput" />
         <button className="jobsearchbutton" onClick={SearchJobs}>Search</button>
       </div>
@@ -23,24 +23,24 @@ export default function JobsPage() {
         <div className="jobsdiv">
           <template className="jobtemplate">
             <button onClick={SelectJob} className="job">
-              <p className="jobname">Job Name</p>
+              <p className="jobtitle">Job Title</p>
               <p className="companyname">Company Name</p>
               <p className="location">Location</p>
             </button>
           </template>
           <div className="job hidden" id="nojobfoundtext" style={{ cursor: "default" }}>
-            <p className="jobname">No job found</p>
+            <p className="jobtitle">No job found</p>
           </div>
         </div>
-          <div className="jobdetails hidden">
-            <p className="jobname">Job Name</p>
-            <p className="companyname">Company Name</p>
-            <p className="location">Location</p>
-            <p className="pay">Pay</p>
-            <p className="jobtype">Job Type</p>
-            <hr />
-            <p className="jobdescription">Job Description</p>
-          </div>
+        <div className="jobdetails hidden">
+          <p className="jobtitle">Job Title</p>
+          <p className="companyname">Company Name</p>
+          <p className="location">Location</p>
+          <p className="pay">Pay</p>
+          <p className="jobtype">Job Type</p>
+          <hr />
+          <p className="jobdescription">Job Description</p>
+        </div>
       </div >
     </>
   );

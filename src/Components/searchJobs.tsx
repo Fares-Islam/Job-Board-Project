@@ -20,18 +20,18 @@ export default function SearchJobs() {
   if (jobPanelsDiv.children.length == 2) {
     for (let i = 0; i < jobCount; i++) {
       const jobData = JSON.parse(localStorage.getItem(`job${i}`) ?? `{}`);
-      const jobName = jobData.formEntries["Job Name"];
+      const jobtitle = jobData.formEntries["Job Title"];
       const location = jobData.formEntries["Location"];
       const companyName = jobData.formEntries["Company Name"];
 
-      const searchIncludesJobName = jobName.toLowerCase().includes(jobBar.value.toLowerCase());
+      const searchIncludesJobTitle = jobtitle.toLowerCase().includes(jobBar.value.toLowerCase());
       const searchIncludeslocation = location.toLowerCase().includes(locationBar.value.toLowerCase());
 
-      if (searchIncludesJobName && searchIncludeslocation) {
+      if (searchIncludesJobTitle && searchIncludeslocation) {
         found = true;
 
         const templateClonedContent = jobTemplate.children[0].cloneNode(true);
-        templateClonedContent.childNodes[0].textContent = jobName;
+        templateClonedContent.childNodes[0].textContent = jobtitle;
         templateClonedContent.childNodes[1].textContent = `At: ${companyName}`;
         templateClonedContent.childNodes[2].textContent = `In: ${location}`;
         templateClonedContent.addEventListener("click", (event) => SelectJob(event));
@@ -43,13 +43,13 @@ export default function SearchJobs() {
   } else {
     for (let i = 1; i < jobPanelsDiv.children.length; i++) {
 
-      const jobName = jobPanelsDiv.children[i]?.childNodes[0]?.textContent
+      const jobtitle = jobPanelsDiv.children[i]?.childNodes[0]?.textContent
       const location = jobPanelsDiv.children[i]?.childNodes[2]?.textContent
 
-      const searchIncludesJobName = jobName?.toLowerCase().includes(jobBar.value.toLowerCase());
+      const searchIncludesJobTitle = jobtitle?.toLowerCase().includes(jobBar.value.toLowerCase());
       const searchIncludeslocation = location?.toLowerCase().includes(locationBar.value.toLowerCase());
 
-      if (searchIncludesJobName && searchIncludeslocation) {
+      if (searchIncludesJobTitle && searchIncludeslocation) {
         found = true;
 
         if (jobPanelsDiv.children[i].classList.contains("hidden")) {

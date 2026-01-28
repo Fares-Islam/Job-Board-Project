@@ -8,19 +8,19 @@ export default function SelectJob(event: any) {
         jobDetails.classList.remove("hidden");
     }
 
-    for (let i = 0; i < parseInt(localStorage.getItem(`jobCount`) ?? `-1`) +1; i++) {
+    for (let i = 0; i < parseInt(localStorage.getItem(`jobCount`) ?? `-1`) + 1; i++) {
         const jobData = JSON.parse(localStorage.getItem(`job${i}`) ?? `{}`);
-        const jobName = jobData.formEntries["Job Name"];
+        const jobtitle = jobData.formEntries["Job Title"];
         const companyName = jobData.formEntries["Company Name"];
         const location = jobData.formEntries["Location"];
 
-        if (jobName == eventTarget.children[0].textContent && ("At: " + companyName) == eventTarget.children[1].textContent && ("In: " + location) == eventTarget.children[2].textContent) {
+        if (jobtitle == eventTarget.children[0].textContent && ("At: " + companyName) == eventTarget.children[1].textContent && ("In: " + location) == eventTarget.children[2].textContent) {
             jobNumber = i;
         }
     }
 
     const jobData = JSON.parse(localStorage.getItem(`job${jobNumber}`) ?? `{}`);
-    jobDetails.childNodes[0].textContent = jobData.formEntries["Job Name"];
+    jobDetails.childNodes[0].textContent = jobData.formEntries["Job Title"];
     jobDetails.childNodes[1].textContent = "At: " + jobData.formEntries["Company Name"];
     jobDetails.childNodes[2].textContent = "In: " + jobData.formEntries["Location"];
     jobDetails.childNodes[3].textContent = "Pay: " + jobData.formEntries["Pay"] + " " + jobData.formEntries["Pay Currency"] + " " + jobData.formEntries["Pay Rate"];

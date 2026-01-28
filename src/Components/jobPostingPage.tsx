@@ -28,11 +28,11 @@ export default function JobPostingPage() {
             ></input>
           </div>
           <div>
-            <p>Job Name</p>
+            <p>Job Title</p>
             <input
               type="text"
-              name="Job Name"
-              placeholder="Enter job name"
+              name="Job Title"
+              placeholder="Enter job title"
               maxLength={50}
               required
             ></input>

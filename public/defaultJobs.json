@@ -4,7 +4,7 @@
             "formEntries": {
                 "Company Name": "Tech Kamta Inc.",
                 "Job Description": "Develop and maintain web applications.",
-                "Job Name": "Software Engineer",
+                "Job Title": "Software Engineer",
                 "Job Type": "Full-time",
                 "Location": "New York, NY",
                 "Pay": "90000",
@@ -16,7 +16,7 @@
             "formEntries": {
                 "Company Name": "Poinas LLC",
                 "Job Description": "Analyze data to provide business insights.",
-                "Job Name": "Data Analyst",
+                "Job Title": "Data Analyst",
                 "Job Type": "Full-time",
                 "Location": "San Francisco, CA",
                 "Pay": "80000",
@@ -28,7 +28,7 @@
             "formEntries": {
                 "Company Name": "Baxter Corp",
                 "Job Description": "Manage project timelines and deliverables.",
-                "Job Name": "Project Manager",
+                "Job Title": "Project Manager",
                 "Job Type": "Full-time",
                 "Location": "Chicago, IL",
                 "Pay": "95000",
@@ -40,7 +40,7 @@
             "formEntries": {
                 "Company Name": "Lexon Technologies",
                 "Job Description": "Oversee product development and strategy.",
-                "Job Name": "Product Manager",
+                "Job Title": "Product Manager",
                 "Job Type": "Full-time",
                 "Location": "Austin, TX",
                 "Pay": "92000",
@@ -52,7 +52,7 @@
             "formEntries": {
                 "Company Name": "Jamka Designs",
                 "Job Description": "Design and develop creative solutions.",
-                "Job Name": "Creative Designer",
+                "Job Title": "Creative Designer",
                 "Job Type": "Full-time",
                 "Location": "Los Angeles, CA",
                 "Pay": "85000",
