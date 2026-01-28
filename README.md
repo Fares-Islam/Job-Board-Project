@@ -23,5 +23,5 @@ Career Sustainer is the name of this simple job-board website
 
 ## Running Locally
 Open a terminal in the location of the folder you downloaded from this repository (extract if compressed) then enter:
-npm install
-npm run dev
+- npm install
+- npm run dev
